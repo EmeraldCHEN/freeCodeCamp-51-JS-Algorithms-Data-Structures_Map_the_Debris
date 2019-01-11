@@ -7,8 +7,8 @@ function orbitalPeriod(arr) {
     let c = Math.pow(earthRadius + obj.avgAlt, 3);
     let b = Math.sqrt(c / GM);
     let oPeriod = Math.round(a * b);
-    delete obj.avgAlt;
-    obj.orbitalPeriod = oPeriod; //delete the key avgAlt, and add the new key and its value
+    delete obj.avgAlt;  //delete the key avgAlt
+    obj.orbitalPeriod = oPeriod; // add the new key and its value
     return obj;
   }
   for(let index in arr){
